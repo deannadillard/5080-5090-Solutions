@@ -1,2 +1,43 @@
+\textbf{10.01} \\
+Let $X_1,...,X _{n} $ be a random sample from a Poisson distribution, $X _{i} \sim $POI$(\mu)$. Verify that $S = \sum\limits_{i=1}^n X_{i}$ is sufficient for $\mu$ by using equation (10.2.1).\\
 
-{ \bf 10.01 }
+\hspace{0.5in}
+$f(x) = \frac{e^{-\mu}\mu^x}{x!}$
+\hspace{1.6in}
+$1\{x = 0,1,...\}$\\
+
+\vspace{0.15in}
+\hspace{0.5in}
+$f(x_{1},...,x_{n};\mu) = \prod\limits_{i=1}^n \frac{e^{-\mu}\mu^{x_{i}}}{x_{i}!}$\\
+
+\hspace{1.5in}
+$=\frac{e^{-n\mu}\mu^{\sum\limits_{i=1}^n X_{i}}}{\prod\limits_{i=1}^n x_{i}!}$
+\hspace{0.63in}
+$1\{x = 0,1,...\}$\\
+\vspace{0.25in}
+
+\hspace{0.5in}
+$f_{S}(s;\mu) = \frac{e^{-n\mu}(n\mu)^s}{s!}$
+\hspace{0.63in}\\
+\vspace{0.1in}
+
+Note that $S \sim $POI$(n\mu)$.
+\hspace{0.63in}\\
+\vspace{0.1in}
+
+\hspace{0.5in}
+$\frac{f(x_{1},...,x_{n};\mu)}{f_{S}(s;\mu)} = \frac{ \frac{e^{-n\mu}\mu^{\sum\limits_{i=1}^n X_{i}}}{\prod\limits_{i=1}^n x_{i}!}}  {\frac{e^{-n\mu}(n\mu)^s}{s!}}$
+\hspace{0.63in}\\
+
+\vspace{0.1in}
+\hspace{1.25in}
+$= \frac{ \frac{e^{-n\mu}\mu^s}{\prod\limits_{i=1}^n x_{i}!}}  {\frac{e^{-n\mu}n^s\mu^s}{s!}}$
+\hspace{0.63in}
+
+\vspace{0.1in}
+\hspace{1.25in}
+$= \frac{s!}{n^s\prod\limits_{i=1}^n x_{i}!}$
+\hspace{0.63in}\\
+\vspace{0.1in}
+\vspace{0.1in}\\
+Since this does not depend on $\mu$, $S = \sum\limits_{i=1}^n X_{i}$ is sufficient for $\mu$.
